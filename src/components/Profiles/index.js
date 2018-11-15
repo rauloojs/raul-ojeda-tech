@@ -7,24 +7,24 @@ import ProfilesWrapper from './ProfilesWrapper';
 
 const Profiles = () => {
   return (
-    <ProfilesWrapper className="row center-xs">
+    <ProfilesWrapper className="f-row center-xs">
       <Card
-        className="col-xs-12"
+        className="col-xs-6"
         icon={<FaLinkedinIn />}
         link="https://www.linkedin.com/in/rauloojs/"
         title="My LinkedIn profile" />
       <Card
-        className="col-xs-12"
+        className="col-xs-6"
         icon={<FaGithub />}
         link="https://github.com/rauloojs"
         title="My GitHub profile" />
       <Card
-        className="col-xs-12"
+        className="col-xs-6"
         icon={<FaClock />}
         link="https://wakatime.com/@rauloojs"
         title="My Wakatime profile" />
       <Card
-        className="col-xs-12"
+        className="col-xs-6"
         icon={<FaFile />}
         link={cv}
         title="Download my resume" />
