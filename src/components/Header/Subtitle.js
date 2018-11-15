@@ -4,7 +4,7 @@ const Subtitle = styled.h3`
   font-size: 0.4em;
   color: #6b6b6b;
   font-family: Cabin;
-  margin: 0;
+  margin: 0.5rem 0;
   padding-left: 5px;
 
   @media (max-width: 600px) {

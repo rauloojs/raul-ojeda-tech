@@ -8,14 +8,14 @@ import TitleWrapper from './TitleWrapper';
 
 const Header = ({ siteTitle }) => (
   <div>
-    <div className="row">
+    <div className="f-row">
       <LinkWrapper className="col-xs-12">
         <Link
           to="/"
-          className="row center-xs middle-xs"
+          className="f-row center-xs middle-xs"
         >
           <FaCode style={{
-            'margin-right': '0.5em',
+            'marginRight': '0.5em',
             'fontSize': '1.3em',
           }}/>
           <TitleWrapper>
