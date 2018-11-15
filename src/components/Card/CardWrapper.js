@@ -21,10 +21,6 @@ const CardWrapper = styled.a`
     background-size: 100%;
     transition: background 0s;
   }
-
-  @media (max-width: 600px) {
-    width: 100%;
-  }
 `;
 
 export default CardWrapper;
