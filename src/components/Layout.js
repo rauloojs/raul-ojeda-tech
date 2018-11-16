@@ -5,8 +5,8 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './Header'
 
-import 'flexboxgrid/dist/flexboxgrid.min.css'
 import '../css/main.css'
+import 'flexboxgrid/dist/flexboxgrid.min.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
