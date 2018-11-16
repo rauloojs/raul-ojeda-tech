@@ -21,7 +21,8 @@ export const query = graphql`
           title,
           company,
           dates,
-          description
+          description,
+          tags
         }
       }
     }

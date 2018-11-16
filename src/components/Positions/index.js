@@ -13,6 +13,7 @@ const Positions = ({ positions }) => {
           company={node.company}
           dates={node.dates}
           description={node.description}
+          tags={node.tags}
         />
       ))}
     </PositionsWrapper>
