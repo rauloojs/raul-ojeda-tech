@@ -4,25 +4,29 @@ import styled from 'styled-components';
 import { Link } from '@reach/router';
 
 const Style = styled.span`
+  & a {
   padding:  0.4rem 0.6rem;
   cursor: pointer;
 
-  &:hover {
+  &.active, &:hover {
     background: grey;
     color: white;
   }
+}
 `;
 
 
 const NavbarItem = ({ path, title }) => (
+  <Style>
   <Link
     to={path}
-    className="f-row center-xs middle-xs"
+    getProps={({ isCurrent }) => ({
+      className: `f-row center-xs middle-xs ${isCurrent ? "active" : ""}`
+    })}
   >
-    <Style>
       {title}
-    </Style>
   </Link>
+    </Style>
 )
 
 NavbarItem.propTypes = {
