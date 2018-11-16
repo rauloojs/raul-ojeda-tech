@@ -5,6 +5,7 @@ import LinkWrapper from './LinkWrapper';
 import Title from './Title';
 import Subtitle from './Subtitle';
 import TitleWrapper from './TitleWrapper';
+import Navbar from '../Navbar';
 
 const Header = ({ siteTitle }) => (
   <div>
@@ -28,6 +29,7 @@ const Header = ({ siteTitle }) => (
           </TitleWrapper>
         </Link>
       </LinkWrapper>
+      <Navbar />
     </div>
   </div>
 )
