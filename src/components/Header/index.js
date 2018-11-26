@@ -22,7 +22,7 @@ class Header extends Component {
   componentDidMount () {
     scrollListener = (event) => {
       this.setState({
-        headerClass: (window.scrollY > 0) ? "sticky" : ""
+        headerClass: (window.scrollY > 100) ? "sticky" : ""
       })
     };
     window.addEventListener("scroll", scrollListener)
@@ -35,28 +35,26 @@ class Header extends Component {
   render() {
     return (
       <HeaderWrapper className={this.state.headerClass}>
-        <div className="f-row">
-          <LinkWrapper className="col-xs-12">
-            <Link
-              to="/"
-              className="f-row center-xs middle-xs"
-            >
-              <FaCode style={{
-                'marginRight': '0.5em',
-                'fontSize': '1.3em',
-              }}/>
-              <TitleWrapper>
-                <Title>
-                  {this.props.siteTitle}
-                </Title>
-                <Subtitle>
-                  Full Stack Web Developer
-                </Subtitle>
-              </TitleWrapper>
-            </Link>
-          </LinkWrapper>
-          <Navbar />
-        </div>
+        <LinkWrapper className="link-wrapper">
+          <Link
+            to="/"
+            className="link"
+          >
+            <FaCode style={{
+              'marginRight': '0.5em',
+              'fontSize': '1.3em',
+            }}/>
+            <TitleWrapper>
+              <Title>
+                {this.props.siteTitle}
+              </Title>
+              <Subtitle className="subtitle">
+                Full Stack Web Developer
+              </Subtitle>
+            </TitleWrapper>
+          </Link>
+        </LinkWrapper>
+        <Navbar />
       </HeaderWrapper>
     );
   }

@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import NavbarItem from './NavbarItem';
+import NavbarWrapper from './NavbarWrapper';
 
 const Navbar = (props) => {
   return (
-    <div className="col-xs-12 f-row center-xs">
+    <NavbarWrapper>
       <NavbarItem
         path="/"
         title="Experience"
@@ -25,7 +26,7 @@ const Navbar = (props) => {
         path="/about"
         title="About"
       />
-    </div>
+    </NavbarWrapper>
   );
 };
 
