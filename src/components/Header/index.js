@@ -46,7 +46,7 @@ class Header extends Component {
             }}/>
             <TitleWrapper>
               <Title>
-                {this.props.siteTitle}
+                Raúl <span className="lastname">Ojeda</span>
               </Title>
               <Subtitle className="subtitle">
                 Full Stack Web Developer
