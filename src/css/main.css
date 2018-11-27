@@ -5,3 +5,15 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.w-0 {
+  width: 0;
+}
+
+.vh {
+  visibility: hidden;
+}
+
+.vv {
+  visibility: visible;
+}
