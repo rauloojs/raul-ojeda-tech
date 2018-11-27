@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './Header'
+import Header from '../Header'
 
-import '../css/main.css'
+import '../../css/main.css'
 import 'flexboxgrid/dist/flexboxgrid.min.css'
 import 'tachyons/css/tachyons.min.css'
 
@@ -35,10 +35,7 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.indexTitle} />
         <div
           style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: '11em',
+            padding: '11rem 0 2rem 0',
           }}
         >
           {children}
