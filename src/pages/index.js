@@ -45,7 +45,10 @@ export const query = graphql`
           company,
           dates,
           description,
-          tags
+          tags {
+            label,
+            class
+          }
         }
       }
     }
