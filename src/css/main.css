@@ -17,3 +17,7 @@
 .vv {
   visibility: visible;
 }
+
+.shadow-right {
+  box-shadow: 2px 0 3px -2px #888;
+}
