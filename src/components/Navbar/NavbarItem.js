@@ -18,7 +18,7 @@ const Style = styled.div`
     left: 50%;
     width: 0;
     position: absolute;
-    background: #5f5f5fde;
+    background: #318ada;
     border-radius: 5px;
     content: "";
     transition: all 0.3s;
@@ -34,17 +34,17 @@ const Style = styled.div`
   }
 
   & a {
-    height: 100%;
+    height: 32px;
     padding:  0.4rem 0.6rem;
     cursor: pointer;
 
-    &:active {
+    &:active, &:visited {
       color: initial;
     }
 
     &.active {
-      background: #5f5f5fde;
-      color: #efefef;
+      background: #318ada;
+      color: #fff;
       border-radius: 5px;
     }
   }
