@@ -7,6 +7,7 @@ import Header from './Header'
 
 import '../css/main.css'
 import 'flexboxgrid/dist/flexboxgrid.min.css'
+import 'tachyons/css/tachyons.min.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
