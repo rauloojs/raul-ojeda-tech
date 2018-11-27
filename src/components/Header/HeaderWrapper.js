@@ -1,14 +1,16 @@
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.div`
-  height: 11em;
+  height: 12em;
   transition: all 0.3s, box-shadow 1s;
   background: #fff;
   position: fixed;
   width: 100%;
+  z-index: 1;
 
   & > .link-wrapper {
     flex-direction: column;
+    margin-bottom: 1em;
   }
 
   &.sticky {
@@ -22,6 +24,7 @@ const HeaderWrapper = styled.div`
     & > .link-wrapper {
       flex-direction: row;
       padding-left: 1em;
+      margin-bottom: 0;
 
       & > a {
         margin-top: 0;

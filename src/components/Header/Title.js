@@ -8,6 +8,10 @@ const Title = styled.h1`
   padding-right: 0;
   padding-left: 0;
 
+  & .lastname {
+    color: #318ada;
+  }
+
   @media (max-width: 600px) {
     font-size: 2em;
   }
