@@ -3,23 +3,21 @@ import styled from 'styled-components';
 const CardWrapper = styled.a`
   background-image: none;
   width: auto;
-  min-width: 200px;
-  min-height: 200px;
-  font-size: 3em;
+  min-width: 150px;
+  min-height: 150px;
+  font-size: 2.5em;
   color: #676767;
   cursor: pointer;
-  background-position: center;
-  transition: background 0.8s;
+  transition: all 0.8s;
 
   &:hover {
     color: inherit;
-    background: #ebebeb radial-gradient(circle, transparent 1%, #ebebeb 1%) center/15000%;
-  }
+    background-color: #ebebeb;
 
-  &:active {
-    background-color: #fafafa;
-    background-size: 100%;
-    transition: background 0s;
+    & > svg {
+      transition: all 0.8s;
+      transform: scale(1.2);
+    }
   }
 `;
 
