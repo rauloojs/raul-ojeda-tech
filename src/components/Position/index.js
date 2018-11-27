@@ -7,23 +7,29 @@ import Company from './Company';
 import Dates from './Dates';
 import Description from './Description';
 
-const Position = ({ title, company, dates, description, tags }) => {
-  return (
-    <PositionWrapper>
-      <Title>{title}</Title>
-      <Company>{company}</Company>
-      <Dates>{dates}</Dates>
-      <Description>{description}</Description>
-      <Tags tags={tags} />
+const Position = ({ item, selectedItem, onClick }) => {
+  return selectedItem ? (
+    <div
+      className={`pv2 pl2 bb b--black-10 pointer ${selectedItem.id !== item.id && 'glow o-60'}`}
+      onClick={() => onClick(item)}
+    >
+      <div className="f7">{item.title}</div>
+      <div className="f7 black-30">{item.company}</div>
+      <Tags tags={item.tags} />
+    </div>
+  ) : (
+    <PositionWrapper onClick={() => onClick(item)}>
+      <Title>{item.title}</Title>
+      <Company>{item.company}</Company>
+      <Dates>{item.dates}</Dates>
+      <Description>{item.description}</Description>
+      <Tags tags={item.tags} />
     </PositionWrapper>
   );
 };
 
 Position.propTypes = {
-  title: PropTypes.string.isRequired,
-  company: PropTypes.string.isRequired,
-  dates: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  item: PropTypes.object.isRequired,
 };
 
 export default Position;
