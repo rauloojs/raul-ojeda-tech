@@ -6,7 +6,10 @@ import Tag from './Tag';
 const Tags = ({ tags }) => (
   <TagsWrapper>
     {tags.map((tag, index) => (
-      <Tag key={index}>{tag}</Tag>
+      <Tag
+        key={index}
+        className={tag.class}
+      >{tag.label}</Tag>
     ))}
   </TagsWrapper>
 );

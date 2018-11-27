@@ -8,7 +8,7 @@ const Tag = styled.div`
   margin-left: 0;
   color: white;
   border-radius: 6px;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   width: fit-content
 `;
 
