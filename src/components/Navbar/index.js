@@ -1,9 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import NavbarItem from './NavbarItem';
 import NavbarWrapper from './NavbarWrapper';
 
-const Navbar = (props) => {
+const Navbar = () => {
   return (
     <NavbarWrapper>
       <NavbarItem
@@ -28,10 +27,6 @@ const Navbar = (props) => {
       />
     </NavbarWrapper>
   );
-};
-
-Navbar.propTypes = {
-  
 };
 
 export default Navbar;
