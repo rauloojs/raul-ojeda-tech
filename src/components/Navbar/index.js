@@ -1,10 +1,9 @@
 import React from 'react';
 import NavbarItem from './NavbarItem';
-import NavbarWrapper from './NavbarWrapper';
 
-const Navbar = () => {
+const Navbar = ({ hide }) => {
   return (
-    <NavbarWrapper>
+    <div className={`mt3 mt0-l flex-column flex-row-l self-center ${hide ? 'dn' : 'flex'}`}>
       <NavbarItem
         path="/"
         title="Experience"
@@ -25,7 +24,7 @@ const Navbar = () => {
         path="/about"
         title="About"
       />
-    </NavbarWrapper>
+    </div>
   );
 };
 
