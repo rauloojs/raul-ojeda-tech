@@ -38,10 +38,6 @@ const Style = styled.div`
     padding:  0.4rem 0.6rem;
     cursor: pointer;
 
-    &:active, &:visited {
-      color: initial;
-    }
-
     &.active {
       background: #318ada;
       color: #fff;
@@ -56,7 +52,7 @@ const NavbarItem = ({ path, title }) => (
     <Link
       to={path}
       getProps={({ isCurrent }) => ({
-        className: `f-row center-xs middle-xs ${isCurrent ? "active" : ""}`
+        className: `f-row center-xs middle-xs black-90 ${isCurrent ? "active" : ""}`
       })}
     >
         {title}
