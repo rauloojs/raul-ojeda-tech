@@ -1,5 +1,6 @@
 body {
   position: relative;
+  min-height: 100vh;
 }
 
 .f-row {
@@ -62,6 +63,22 @@ body {
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
 }
 
+.paper-1-hover:hover {
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+}
+
 .paper-2 {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+}
+
+.right-center {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+@media screen and (min-width: 960px) {
+  .pt-header-l {
+    padding-top: 11rem;
+  }
 }
