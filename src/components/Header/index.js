@@ -1,60 +1,69 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
-import { FaCode } from 'react-icons/fa';
-import HeaderWrapper from './HeaderWrapper';
-import LinkWrapper from './LinkWrapper';
-import Title from './Title';
-import Subtitle from './Subtitle';
-import TitleWrapper from './TitleWrapper';
-import Navbar from '../Navbar';
+import { FaBars } from 'react-icons/fa';
+import throttle from 'lodash/throttle';
 
-let scrollListener = null;
+import HeaderWrapper from './HeaderWrapper';
+import Navbar from '../Navbar';
+import SiteTitle from '../SiteTitle';
+
+let scrollListener, resizeListener = null;
 
 class Header extends Component {
   constructor (props) {
     super(props);
 
     this.state = {
-      headerClass: ""
+      hideNavbar: true,
+      scrolled: false,
+      smallViewport: window.innerWidth < 960,
     };
   }
 
   componentDidMount () {
-    scrollListener = (event) => {
+    scrollListener = throttle((event) => {
       this.setState({
-        headerClass: (window.scrollY > 100) ? "sticky" : ""
+        scrolled: window.scrollY > 0
       })
-    };
+    }, 100);
+
+    resizeListener = throttle((event) => {
+      this.setState({
+        smallViewport: window.innerWidth < 960
+      });
+    }, 1000);
+
     window.addEventListener("scroll", scrollListener)
+    window.addEventListener("resize", resizeListener)
   }
 
   componentWillUnmount () {
     window.removeEventListener("scroll", scrollListener);
+    window.removeEventListener("resize", resizeListener);
+  }
+
+  handleNavbarToggle = (e) => {
+    this.setState({
+      hideNavbar: !this.state.hideNavbar
+    });
   }
 
   render() {
+    const small = this.state.scrolled || this.state.smallViewport;
+
     return (
-      <HeaderWrapper className={this.state.headerClass}>
-        <LinkWrapper className="link-wrapper">
-          <Link
-            to="/"
-            className="link"
-          >
-            <FaCode style={{
-              'marginRight': '0.5em',
-              'fontSize': '1.3em',
-            }}/>
-            <TitleWrapper>
-              <Title>
-                Raúl <span className="lastname">Ojeda</span>
-              </Title>
-              <Subtitle className="subtitle">
-                Full Stack Web Developer
-              </Subtitle>
-            </TitleWrapper>
-          </Link>
-        </LinkWrapper>
-        <Navbar />
+      <HeaderWrapper
+        smallViewport={this.state.smallViewport}
+        scrolled={this.state.scrolled}
+        hideNavbar={this.state.hideNavbar}
+        className={`w-100 flex items-start items-center-l fixed ${small ? ' pt0-l flex-column flex-row-l justify-between-l ph3 shadow-bottom justify-center': 'pt4 flex-column justify-between'}`}
+      >
+        <SiteTitle small={small} />
+        <FaBars
+          className="absolute dn-l right-1 pointer op-90 glow"
+          style={{ top: 16 }}
+          onClick={this.handleNavbarToggle}
+        />
+        <Navbar hide={this.state.smallViewport && this.state.hideNavbar} />
       </HeaderWrapper>
     );
   }
