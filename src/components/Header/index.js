@@ -28,7 +28,7 @@ class Header extends Component {
 
     scrollListener = throttle((event) => {
       this.setState({
-        scrolled: window.scrollY > 0
+        scrolled: window.scrollY > 100
       })
     }, 100);
 
