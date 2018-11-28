@@ -34,9 +34,7 @@ const Layout = ({ children }) => (
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.indexTitle} />
         <div
-          style={{
-            padding: '11rem 0 2rem 0',
-          }}
+          className="pt4 pt6-l pb4"
         >
           {children}
         </div>
