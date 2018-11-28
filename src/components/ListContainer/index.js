@@ -18,7 +18,7 @@ const ListContainer = ({ list, content, selectedItem }) => {
 
 ListContainer.propTypes = {
   list: PropTypes.node.isRequired,
-  content: PropTypes.node.isRequired,
+  content: PropTypes.node,
   selectedItem: PropTypes.any
 };
 
