@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import TagsWrapper from './TagsWrapper';
 import Tag from './Tag';
 
-const Tags = ({ tags }) => (
-  <TagsWrapper>
+const Tags = ({ tags, ...props }) => (
+  <TagsWrapper {...props}>
     {tags.map((tag, index) => (
       <Tag
         key={index}
