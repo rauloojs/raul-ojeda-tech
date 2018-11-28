@@ -7,7 +7,7 @@ const Positions = ({ positions, selectedItem, onSelectItem }) => {
   return (
     <ListContainer
       list={(
-        <div className="shadow-right h-100">
+        <div className={`ml2 h-100 ${selectedItem ? 'br3 paper-1 pv2' : 'flex flex-column items-center'}`}>
           {positions.map(({ node }) => (
             <Position
               key={node.id}
@@ -20,9 +20,14 @@ const Positions = ({ positions, selectedItem, onSelectItem }) => {
       )
       }
       content={(
-        <div className="pa4">
-          {selectedItem && selectedItem.title}
-        </div>
+        selectedItem && (
+          <div className="pa4 br3 paper-1 mh2">
+            <h2>{selectedItem.title}</h2>
+            <h4 className="f6 black-60 mb1">{selectedItem.company}</h4>
+            <h4 className="f6 black-30 mb4">{selectedItem.dates}</h4>
+            <p>{selectedItem.description}</p>
+          </div>
+        )
       )}
       selectedItem={selectedItem}
     />
