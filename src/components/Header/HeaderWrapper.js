@@ -10,7 +10,7 @@ const HeaderWrapper = styled.div`
       if (hideNavbar) {
         return '2.5rem';
       } else {
-        return '235px';
+        return '295px';
       }
     } else {
       if (scrolled) {

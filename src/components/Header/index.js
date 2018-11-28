@@ -6,6 +6,7 @@ import HeaderWrapper from './HeaderWrapper';
 import Navbar from '../Navbar';
 import SiteTitle from '../SiteTitle';
 import Backdrop from '../Backdrop';
+import Profiles from '../Profiles';
 
 let scrollListener, resizeListener = null;
 
@@ -74,6 +75,7 @@ class Header extends Component {
             onClick={this.handleNavbarToggle}
           />
           <Navbar hide={this.state.smallViewport && this.state.hideNavbar} />
+          <Profiles className={`self-center dn-l ${this.state.smallViewport && this.state.hideNavbar ? 'dn' : 'flex'}`} />
         </HeaderWrapper>
       </div>
     );
