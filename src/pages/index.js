@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Profiles from '../components/Profiles';
 import Positions from '../components/Positions';
 
 class IndexPage extends Component {
@@ -15,7 +14,6 @@ class IndexPage extends Component {
   }
 
   handleSelectPosition = (selectedPosition) => {
-    console.log(selectedPosition)
     this.setState({
       selectedPosition
     })
@@ -24,7 +22,6 @@ class IndexPage extends Component {
   render () {
     return (
       <Layout>
-        <Profiles />
         <Positions
           positions={this.props.data.allPositionsJson.edges}
           selectedItem={this.state.selectedPosition}
