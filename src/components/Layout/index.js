@@ -4,10 +4,10 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from '../Header'
+import Profiles from '../Profiles';
 
-import '../../css/main.css'
-import 'flexboxgrid/dist/flexboxgrid.min.css'
 import 'tachyons/css/tachyons.min.css'
+import '../../css/main.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -33,8 +33,9 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.indexTitle} />
+        <Profiles className="flex-l flex-column justify-center dn fixed z-1 right-center paper-1-hover br2 br--left overflow-hidden" />
         <div
-          className="pt4 pt6-l pb4"
+          className="pb4 pt5 pt-header-l"
         >
           {children}
         </div>
