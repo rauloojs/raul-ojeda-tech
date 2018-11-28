@@ -36,7 +36,7 @@ const NavbarItem = ({ path, title }) => (
     <Link
       to={path}
       getProps={({ isCurrent }) => ({
-        className: `f-row center-xs middle-xs black-90 button-hover ${isCurrent ? "active" : ""}`
+        className: `flex justify-center items-center black-90 button-hover ${isCurrent ? "active" : ""}`
       })}
     >
         {title}
