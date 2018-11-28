@@ -13,26 +13,6 @@ const Style = styled.div`
   text-transform: uppercase;
   margin: 0 1em;
 
-  & a:after {
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    position: absolute;
-    background: #318ada;
-    border-radius: 5px;
-    content: "";
-    transition: all 0.3s;
-    transform: translateX(-50%);
-    height: 0;
-    opacity: 0;
-  }
-
-  & a:not(.active):hover:after{
-    height: 2px;
-    opacity: 1;
-    width: 100%;
-  }
-
   & a {
     height: 32px;
     padding:  0.4rem 0.6rem;
@@ -42,6 +22,10 @@ const Style = styled.div`
       background: #318ada;
       color: #fff;
       border-radius: 5px;
+
+      &:after {
+        display: none;
+      }
     }
   }
 `;
@@ -52,7 +36,7 @@ const NavbarItem = ({ path, title }) => (
     <Link
       to={path}
       getProps={({ isCurrent }) => ({
-        className: `f-row center-xs middle-xs black-90 ${isCurrent ? "active" : ""}`
+        className: `f-row center-xs middle-xs black-90 button-hover ${isCurrent ? "active" : ""}`
       })}
     >
         {title}
