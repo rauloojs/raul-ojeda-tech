@@ -15,11 +15,16 @@ class Header extends Component {
     this.state = {
       hideNavbar: true,
       scrolled: false,
-      smallViewport: window.innerWidth < 960,
+      smallViewport: true,
     };
   }
 
   componentDidMount () {
+    // Set smallViewport here where window is defined
+    this.setState({
+      smallViewport: window.innerWidth < 960
+    });
+
     scrollListener = throttle((event) => {
       this.setState({
         scrolled: window.scrollY > 0
