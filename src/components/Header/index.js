@@ -15,7 +15,7 @@ class Header extends Component {
     this.state = {
       hideNavbar: true,
       scrolled: false,
-      smallViewport: false,
+      smallViewport: true,
     };
   }
 
