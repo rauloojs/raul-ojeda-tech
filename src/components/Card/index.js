@@ -7,7 +7,7 @@ const Card = ({ title, icon, link }) => {
     <CardWrapper
       href={link}
       target="_blank"
-      className="f-row center-xs middle-xs"
+      className="flex justify-center items-center"
       title={title}
     >
       {icon}
