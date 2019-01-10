@@ -23,7 +23,7 @@ class IndexPage extends Component {
     return (
       <Layout>
         <Positions
-          positions={this.props.data.allPositionsJson.edges}
+          positions={this.props.data.allMarkdownRemark.edges}
           selectedItem={this.state.selectedPosition}
           onSelectItem={this.handleSelectPosition}
         />
@@ -45,6 +45,24 @@ export const query = graphql`
           tags {
             label,
             class
+          }
+        }
+      }
+    },
+    allMarkdownRemark(filter: { frontmatter: { type: { eq: "position" }}}) {
+      edges {
+        node {
+          id,
+          html,
+          frontmatter {
+            title,
+            company,
+            dates,
+            description,
+            tags {
+              label,
+              class
+            }
           }
         }
       }
