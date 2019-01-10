@@ -49,7 +49,7 @@ export const query = graphql`
         }
       }
     },
-    allMarkdownRemark(filter: { frontmatter: { type: { eq: "position" }}}) {
+    allMarkdownRemark(sort: {order: DESC, fields: [fileAbsolutePath]}, filter: { frontmatter: { type: { eq: "position" }}}) {
       edges {
         node {
           id,
