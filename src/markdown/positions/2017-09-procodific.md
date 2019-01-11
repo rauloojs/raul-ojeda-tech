@@ -23,7 +23,8 @@
       "class": "bg-red white o-90"
     }
   ],
-  "type": "position"
+  "type": "position",
+  "path": "positions/procodific-full-stack-web-developer"
 }
 ---
 

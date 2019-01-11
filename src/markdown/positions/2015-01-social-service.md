@@ -18,7 +18,8 @@
       "class": "bg-light-purple white o-90"
     }
   ],
-  "type": "position"
+  "type": "position",
+  "path": "positions/buap-social-service"
 }
 ---
 

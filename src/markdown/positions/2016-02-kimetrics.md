@@ -18,7 +18,8 @@
       "class": "bg-light-blue white o-90"
     }
   ],
-  "type": "position"
+  "type": "position",
+  "path": "positions/kimetrics-full-stack-web-developer"
 }
 ---
 <div class="f6">

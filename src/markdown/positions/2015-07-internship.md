@@ -18,7 +18,8 @@
       "class": "bg-light-red white o-90"
     }
   ],
-  "type": "position"
+  "type": "position",
+  "path": "positions/t-systems-internship"
 }
 ---
 
