@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const CourseYear = styled.span`
+const DegreeDates = styled.span`
   color: #999;
 `;
 
-export default CourseYear;
+export default DegreeDates;
