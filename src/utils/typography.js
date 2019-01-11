@@ -9,13 +9,13 @@ const typography = new Typography({
       styles: ['400'],
     },
     {
-      name: 'Cabin',
+      name: 'Noto Sans',
       styles: ['400', '600', '700'],
     },
   ],
   headerWeight: '400',
   headerFontFamily: ['Lato', 'sans-serif'],
-  bodyFontFamily: ['Cabin', 'sans-serif'],
+  bodyFontFamily: ['Noto Sans', 'sans-serif'],
   bodyWeight: 400,
   boldWeight: 700,
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
