@@ -5,27 +5,12 @@ import Layout from '../components/Layout'
 import Positions from '../components/Positions';
 
 class IndexPage extends Component {
-  constructor (props) {
-    super(props)
-
-    this.state = {
-      selectedPosition: null
-    }
-  }
-
-  handleSelectPosition = (selectedPosition) => {
-    this.setState({
-      selectedPosition
-    })
-  }
-
   render () {
     return (
       <Layout>
         <Positions
-          positions={this.props.data.allPositionsJson.edges}
-          selectedItem={this.state.selectedPosition}
-          onSelectItem={this.handleSelectPosition}
+          positions={this.props.data.allMarkdownRemark.edges}
+          asList={false}
         />
       </Layout>
     );
@@ -34,17 +19,20 @@ class IndexPage extends Component {
 
 export const query = graphql`
   query {
-    allPositionsJson {
+    allMarkdownRemark(sort: {order: DESC, fields: [fileAbsolutePath]}, filter: { frontmatter: { type: { eq: "position" }}}) {
       edges {
         node {
           id,
-          title,
-          company,
-          dates,
-          description,
-          tags {
-            label,
-            class
+          frontmatter {
+            title,
+            company,
+            dates,
+            description,
+            tags {
+              label,
+              class
+            },
+            path
           }
         }
       }

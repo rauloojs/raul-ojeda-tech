@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import ListWrapper from './ListWrapper';
 import ContentWrapper from './ContentWrapper';
 
-const ListContainer = ({ list, content, selectedItem }) => {
+const ListContainer = ({ list, content }) => {
   return (
     <div className="w-100 flex self-stretch">
-      <ListWrapper className={`${selectedItem ? 'db-ns dn w-40-m w-30' : 'w-100'}`}>
+      <ListWrapper className={`db-ns dn w-40-m w-30`}>
         {list}
       </ListWrapper>
-      <ContentWrapper className={`${selectedItem ? 'w-100 w-60-m w-70' : ' dn w-0'}`}>
+      <ContentWrapper className={`w-100 w-60-m w-70`}>
         {content}
       </ContentWrapper>
     </div>
