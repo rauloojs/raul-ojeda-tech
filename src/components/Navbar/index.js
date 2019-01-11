@@ -9,16 +9,8 @@ const Navbar = ({ hide }) => {
         title="Experience"
       />
       <NavbarItem
-        path="/expertise"
-        title="Expertise"
-      />
-      <NavbarItem
         path="/education"
         title="Education"
-      />
-      <NavbarItem
-        path="/skills"
-        title="Skills"
       />
       <NavbarItem
         path="/about"
