@@ -20,8 +20,8 @@ const Position = ({ data, pageContext }) => {
         content={(
           <div className="pa4 br3 paper-1 mh2 w-auto w-90-l">
             <h2>{position.frontmatter.title}</h2>
-            <h4 className="f6 black-60 mb1">{position.frontmatter.company}</h4>
-            <h4 className="f6 black-30 mb4">{position.frontmatter.dates}</h4>
+            <h4 className="black-60 mb1">{position.frontmatter.company}</h4>
+            <h4 className="black-30 mb4">{position.frontmatter.dates}</h4>
             <div dangerouslySetInnerHTML={{ __html: position.html }}></div>
           </div>
         )}
