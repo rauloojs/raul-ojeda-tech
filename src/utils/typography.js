@@ -1,8 +1,7 @@
 import Typography from "typography"
 
 const typography = new Typography({
-  baseFontSize: '20px',
-  baseLineHeight: 1.45,
+  baseFontSize: '14px',
   googleFonts: [
     {
       name: 'Lato',
