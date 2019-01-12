@@ -9,21 +9,21 @@ const Languages = () => {
       <div className="flex flex-column flex-row-ns justify-between ph3 mb3">
         <Language
           title="Spanish"
-          levelNumber="100"
+          levelNumber={100}
           level="Native"
         />
         <Language
           title="English"
-          levelNumber="75"
+          levelNumber={75}
           level="Advanced"
         />
         <Language
           title="Esperanto"
-          levelNumber="25"
+          levelNumber={25}
           level="Basic"
         />
       </div>
-      <div className="flex flex-column" style={{ fontSize: '0.6rem' }}>
+      <div className="flex flex-column f7">
         <span>English - B2 European common framework.</span>
         <span><a href="https://www.dyned.com/us/content/certverify">DynEd International, Inc. Certification.</a></span>
         <span>Code: ur-pnpb-b10u-aq</span>
