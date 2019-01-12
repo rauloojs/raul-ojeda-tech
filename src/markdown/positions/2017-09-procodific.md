@@ -28,7 +28,6 @@
 }
 ---
 
-<div class="f6">
   <h3>Projects</h3>
   <a href="https://dmi.io/" target="_blank">
     <h4>Data Markets Inc.</h4>
@@ -55,4 +54,3 @@
   <h4>Tech For Reporters</h4>
   <p>Wrote a few lines of code for this project. Worked on backend and frontend (MERN stack).</p>
   <p>My main contribution was starting the redesign of the site. Added storybook, worked with styled components</p>
-</div>

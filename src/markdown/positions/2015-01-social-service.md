@@ -23,14 +23,12 @@
 }
 ---
 
-<div class="f6">
-  <h3>Projects</h3>
+<h3>Projects</h3>
 
-  <h4>Design of new platform</h4>
-  <p>
-    Software engineering for a new Social Service web based platform, focused on user experience and engagement through gamification.
-  </p>
+<h4>Design of new platform</h4>
+<p>
+  Software engineering for a new Social Service web based platform, focused on user experience and engagement through gamification.
+</p>
 
-  - Mockups designed with Balsamiq
-  - Diagrams created with YAML
-</div>
+- Mockups designed with Balsamiq
+- Diagrams created with YAML

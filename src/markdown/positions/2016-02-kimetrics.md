@@ -22,7 +22,6 @@
   "path": "positions/kimetrics-full-stack-web-developer"
 }
 ---
-<div class="f6">
   <h3>Projects</h3>
   <h4>Kimetrics frontend</h4>
   <p>
@@ -48,5 +47,3 @@
     Frontend tool to generate flowcharts-like surveys. These "designs" were later used as base for survey answering in mobile app. This project was build with user experience in mind. Grommet was chosen as UI framework. I used JsPlumb to generate SVG elements free to move in viewport and create connections between nodes.
   </p>
   <p>I faced some issues due to JsPlumb DOM management and had to carefully connect event listeners with React components's lifecycle</p>
-
-</div>
