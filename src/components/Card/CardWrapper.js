@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const CardWrapper = styled.a`
   background-color: white;
   width: auto;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 1rem;
   color: #676767;
   cursor: pointer;
@@ -14,7 +14,7 @@ const CardWrapper = styled.a`
       color: inherit;
       background-color: #ebebeb;
       padding: 1.5rem;
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
   }
 `;
