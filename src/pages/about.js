@@ -1,9 +1,10 @@
 import React from 'react'
-import { FaGithub, FaCode, FaServer, FaPencilRuler, FaPaintBrush } from 'react-icons/fa';
+import { FaHeart, FaGithub, FaCode, FaServer, FaPencilRuler, FaPaintBrush } from 'react-icons/fa';
 
 import Layout from '../components/Layout'
 import Container from '../components/Container';
 import Paper from '../components/Paper';
+import AboutCard from '../components/AboutCard';
 
 const AboutPage = ({ data }) => (
   <Layout>
@@ -16,24 +17,58 @@ const AboutPage = ({ data }) => (
       </Paper>
       <Paper>
         <h2>About this site</h2>
-        <p>Built with <a href="https://www.gatsbyjs.org/">Gatsby</a> framework which provides modern technologies out of the box for static websites:</p>
-        <ul>
-          <li>React</li>
-          <li>Webpack</li>
-          <li>GraphQL</li>
-          <li>JAM stack architecture</li>
-          <li>Progressive Web App</li>
-        </ul>
-        <p><FaCode /> Written with VSCode</p>
-        <p><FaPaintBrush/> Styling:</p>
-        <ul>
-          <li>Tachyons (functional CSS)</li>
-          <li>Styled components</li>
-          <li>Typography (easy web fonts)</li>
-        </ul>
-        <p><FaPencilRuler /> Storybook as UI dev environment</p>
-        <p><FaServer /> Hosting powered by Netlify</p>
-        <p>Source code available at <FaGithub /></p>
+        <AboutCard
+          icon={<FaHeart />}
+          content={(
+            <div>
+              <p>Built with <a href="https://www.gatsbyjs.org/">Gatsby</a> framework which provides modern technologies out of the box for static websites:</p>
+              <ul>
+                <li>React</li>
+                <li>Webpack</li>
+                <li>GraphQL</li>
+                <li>JAM stack architecture</li>
+                <li>Progressive Web App</li>
+              </ul>
+            </div>
+          )}
+        />
+        <AboutCard
+          icon={<FaCode />}
+          content={(
+            <div>Written with <a href="https://code.visualstudio.com/">VSCode</a></div>
+          )}
+        />
+        <AboutCard
+          icon={<FaPencilRuler />}
+          content={(
+            <div><a href="https://github.com/storybooks/storybook">Storybook</a> as UI dev environment</div>
+          )}
+        />
+        <AboutCard
+          icon={<FaPaintBrush/>}
+          content={(
+            <div>
+              <p>Styling:</p>
+              <ul>
+                <li><a href="https://github.com/tachyons-css/tachyons/">Tachyons</a> (functional CSS)</li>
+                <li><a href="https://github.com/styled-components/styled-components">Styled components</a></li>
+                <li><a href="https://github.com/KyleAMathews/typography.js">Typography</a> (easy web fonts)</li>
+              </ul>
+            </div>
+          )}
+        />
+        <AboutCard
+          icon={<FaServer />}
+          content={(
+            <div>Hosting powered by <a href="https://www.netlify.com">Netlify</a></div>
+          )}
+        />
+        <AboutCard
+          icon={<FaGithub />}
+          content={(
+            <div>Source code available at <a href="https://github.com/rauloojs/raul-ojeda-tech">Github</a></div>
+          )}
+        />
       </Paper>
     </Container>
   </Layout>
