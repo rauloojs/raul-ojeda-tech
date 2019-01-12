@@ -3,6 +3,10 @@ body {
   min-height: 100vh;
 }
 
+html {
+  line-height: 1.4rem;
+}
+
 a {
   color: #318ada;
 }
@@ -75,6 +79,6 @@ a {
 
 @media screen and (min-width: 960px) {
   .pt-header-l {
-    padding-top: 11rem;
+    padding-top: 12rem;
   }
 }
