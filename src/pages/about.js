@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaHeart, FaGithub, FaCode, FaServer, FaPencilRuler, FaPaintBrush } from 'react-icons/fa';
+import { FaGithub, FaCode, FaServer, FaPencilRuler, FaPaintBrush } from 'react-icons/fa';
 
 import Layout from '../components/Layout'
 import Container from '../components/Container';
@@ -9,10 +9,14 @@ const AboutPage = ({ data }) => (
   <Layout>
     <Container>
       <Paper>
-        <p className="ma0">I’m a software engineer located in Puebla, México. I am an IT passionate who has worked for companies committed to innovation and processes quality. Either giving support to internal customers, performing as dev-ops or developing high quality software, I define myself as a problem solver who is always looking for the most creative and efficient solutions. Self taught learner, team worker, and a person who feels very comfortable in modern web development environments.</p>
+        <h2>About me</h2>
+        <p>I’m a <strong>software engineer</strong> located in <strong>Puebla, México</strong>. I am an IT passionate who has worked for companies committed to <strong>innovation and processes quality</strong>.</p>
+        <p>Either giving <strong>support</strong> to internal customers, performing as <strong>dev-ops</strong> or <strong>developing high quality software</strong>, I define myself as a <strong>problem solver</strong> who is always looking for the most <strong>creative</strong> and <strong>efficient</strong> solutions.</p>
+        <p><strong>Self taught</strong> learner, <strong>team worker</strong>, and a person who feels very comfortable in <strong>modern web development environments</strong>.</p>
       </Paper>
       <Paper>
-        <p>This site was built from scratch with <FaHeart /> using <a href="https://www.gatsbyjs.org/">Gatsby</a> framework:</p>
+        <h2>About this site</h2>
+        <p>Built with <a href="https://www.gatsbyjs.org/">Gatsby</a> framework which provides modern technologies out of the box for static websites:</p>
         <ul>
           <li>React</li>
           <li>Webpack</li>
