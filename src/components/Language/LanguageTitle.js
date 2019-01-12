@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const LanguageTitle = styled.span`
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-weight: bold;
 `;
 
