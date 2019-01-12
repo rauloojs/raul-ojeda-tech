@@ -1,3 +1,4 @@
+// Inspired by https://css-tricks.com/building-progress-ring-quickly/
 import React, { Component } from 'react';
 
 export default class ProgressRing extends Component {
@@ -29,7 +30,6 @@ export default class ProgressRing extends Component {
           strokeWidth={ stroke }
           strokeDasharray={ this.circumference }
           strokeDashoffset={ strokeDashoffset }
-          stroke-width={ stroke }
           r={ this.normalizedRadius }
           cx={ radius }
           cy={ radius }
