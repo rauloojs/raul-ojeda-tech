@@ -2,14 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import DegreeWrapper from './DegreeWrapper';
 import DegreeTitle from './DegreeTitle';
-import DegreeUniversity from './DegreeUniversity';
 import DegreeDates from './DegreeDates';
 
 const Degree = ({ title, university, dates }) => {
   return (
     <DegreeWrapper>
       <DegreeTitle>{title}</DegreeTitle>
-      <DegreeUniversity>{university}</DegreeUniversity>
+      <span>{university}</span>
       <DegreeDates>{dates}</DegreeDates>
     </DegreeWrapper>
   );
