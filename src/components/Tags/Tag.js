@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 const Tag = styled.div`
   font-weight: bold;
-  padding: .2rem .3rem;
-  margin: .2rem;
+  padding: 0 .4rem;
+  margin: .3rem;
   margin-left: 0;
   border-radius: 6px;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   width: fit-content
 `;
 
