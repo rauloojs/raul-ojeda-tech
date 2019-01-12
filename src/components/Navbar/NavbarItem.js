@@ -8,10 +8,15 @@ const Style = styled.div`
   height: 100%;
   font-family: Lato;
   line-height: 1em;
-  font-size: 0.8em;
+  font-size: 0.9em;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 0 1em;
+  margin: 5px 0;
+
+
+  @media screen and (min-width: 960px) {
+    margin: 0 1rem;
+  }
 
   & a {
     height: 32px;
