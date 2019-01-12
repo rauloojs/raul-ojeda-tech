@@ -8,11 +8,11 @@ const PositionListItem = ({ position }) => {
     <Link
       to={position.frontmatter.path}
       getProps={({ isCurrent }) => ({
-        className: `db pv2 pl2 mb1 pointer bb b--black-10 ${isCurrent ? '' : 'glow o-40'}`,
+        className: `black db pv2 pl2 mb1 pointer bb b--black-10 ${isCurrent ? '' : 'glow o-40'}`,
       })}
     >
-      <div className="f6">{position.frontmatter.title}</div>
-      <div className="f7 black-50 mb1">{position.frontmatter.company}</div>
+      <div>{position.frontmatter.title}</div>
+      <div className="black-50 mb1">{position.frontmatter.company}</div>
       <Tags tags={position.frontmatter.tags} />
     </Link>
   );
