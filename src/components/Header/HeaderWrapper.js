@@ -8,15 +8,15 @@ const HeaderWrapper = styled.div`
   height: ${({ smallViewport, scrolled, hideNavbar }) => {
     if (smallViewport) {
       if (hideNavbar) {
-        return '2.5rem';
+        return '2.7rem';
       } else {
-        return '295px';
+        return '235px';
       }
     } else {
       if (scrolled) {
-        return '2.5rem';
+        return '2.7rem';
       } else {
-        return '200px';
+        return '165px';
       }
     }
   }}

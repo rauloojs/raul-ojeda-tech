@@ -17,7 +17,7 @@ class Header extends Component {
     this.state = {
       hideNavbar: true,
       scrolled: false,
-      smallViewport: true,
+      smallViewport: false,
     };
   }
 
@@ -29,7 +29,7 @@ class Header extends Component {
 
     scrollListener = throttle((event) => {
       this.setState({
-        scrolled: window.scrollY > 100
+        scrolled: window.scrollY > 0
       })
     }, 100);
 
@@ -71,7 +71,7 @@ class Header extends Component {
           <SiteTitle small={small} />
           <FaBars
             className="absolute dn-l right-1 pointer op-90 glow"
-            style={{ top: 16 }}
+            style={{ top: 12 }}
             onClick={this.handleNavbarToggle}
           />
           <Navbar hide={this.state.smallViewport && this.state.hideNavbar} />
