@@ -77,6 +77,17 @@ a {
   right: 0;
 }
 
+.table-of-contents ul {
+  list-style: none;
+}
+
+.challenges {
+  background: linear-gradient(to right, #24c6dc, #514a9d);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
 @media screen and (min-width: 960px) {
   .pt-header-l {
     padding-top: 12rem;
