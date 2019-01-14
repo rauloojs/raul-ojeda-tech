@@ -33,4 +33,4 @@ Second level support for internal and external customers. Assigned to give maint
 <p>Along with my teammate wrote a Python tool to automate validation of recently configured servers. First a small script written in bash was remotely ran on servers via SSH to get a text file with output data. Then a desktop app (ui powered by PyQt) took those files and maped them to a excel file using a specified template. Xlsx files were filled using the template as base and mapping values through named cells, this way the arrange of values, styling, etc. could be easily changed.</p>
 <p>I wrote a wiki for docs.</p>
 
-<div class="challenges">The process improved in speed considerably: it went from a couple of hours to about 5 minutes</div>
+<ul class="challenges">The process improved in speed considerably: it went from a couple of hours to about 5 minutes</ul>

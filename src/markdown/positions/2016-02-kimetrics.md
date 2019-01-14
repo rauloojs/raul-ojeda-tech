@@ -49,11 +49,11 @@ Restful API designed to be consumed by a mobile application (Android) and feed a
 
 Single Page Application for administrative users and monitoring of mobile users activity.
 
-<div class="challenges">
+<ul class="challenges">
   <li>The amount of data required to render a huge amount of elements which casued a lot of performance issues due to Angular's design. I had to create custom directives to remove useless watchers in maps and calendar views.</li>
   <li>Settings and permissions were in constant change so I developed "recursive" directives which will render views based on objects structures</li>
   <li>Survey builder (based on angular-surveys) could be a separated project due to its complexity</li>
-</div>
+</ul>
 
 - Hosted on AWS S3
 - Based on a Yeoman generator
@@ -77,13 +77,13 @@ Single Page Application for administrative users and monitoring of mobile users 
 
 Frontend tool to generate flowcharts-like surveys. These "designs" were later used as base for survey answering in mobile app. This project was build with user experience in mind. Grommet was chosen as UI framework. I used JsPlumb to generate SVG elements free to move in viewport and create connections between nodes. This tool was the first piece of new frontend project based on React.
 
-<div class="challenges">
+<ul class="challenges">
   <li>This tool required excellent User Experience due to survey's complex design.</li>
   <li>New surveys model (flow) supports versions management, so the UI.</li>
   <li>It was hard to find and adecuate library for the flow-chart-like part. JSPlumb proved to be the right answer by providing a graph-like approach with great performance (it's SVG based).</li>
   <li>I faced some issues due to JsPlumb DOM management and had to carefully connect event listeners with React components's lifecycle.</li>
   <li>Flow's design include a custom query language (based on React Query Builder) to be applied directly over backend's ORM.</li>
-</div>
+</ul>
 
 - Hosted on AWS S3
 - Fabric for deployment

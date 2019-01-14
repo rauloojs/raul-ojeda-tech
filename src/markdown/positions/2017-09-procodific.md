@@ -35,13 +35,13 @@ Full time developer (sometimes with flexible times, depending on workload). I wo
 
 ##CountN
 Restful API for CountN mobile app (not released yet). CountN helps musicians to connect with live venues to schedule and perform gigs.
-<div class="challenges">
+<ul class="challenges">
   <li>App had Stripe as payment option.</li>
   <li>App had a escrow system which required payments to be in hold until gig was performed.</li>
   <li>App had a chat system linked to events system.</li>
   <li>API needed custom search and filtering so I developed a mini framework for it. Used Mongo's aggregation framework and created a pagination module.</li>
   <li>API needed to be fully documented so I used Apidoc to generate inline docs.</li>
-</div>
+</ul>
 
 ###Backend
 - Hosted on AWS EC2
@@ -60,12 +60,12 @@ Restful API for CountN mobile app (not released yet). CountN helps musicians to 
 
 ##Data Markets Inc.
 Complete redesign for dmi platform. Implement given UI design using React and upgrade backend stack.
-<div class="challenges">
+<ul class="challenges">
   <li>Frontend had to be SEO friendly. Server side rendering was mandatory.</li>
   <li>Frontend should behave as a SPA. I decided to use React on rails library which provides SSR and helpers to keep React code separated from backend</li>
   <li>New design came with new features for platform, so besides backend "upgrade", a few modules where refactored.</li>
   <li>Created Restful API based on existing code to be consumed by frontend.</li>
-</div>
+</ul>
 
 ###Backend
 - Hosted on Heroku
