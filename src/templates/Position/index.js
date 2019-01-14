@@ -1,9 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import rehypeReact from 'rehype-react';
+
 import ListContainer from '../../components/ListContainer';
 import Positions from '../../components/Positions';
-import { graphql } from 'gatsby';
 import Layout from '../../components/Layout';
+import PositionHeader from '../../components/PositionHeader';
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: {},
+}).Compiler
 
 const Position = ({ data, pageContext }) => {
   const position = data.markdownRemark;
@@ -18,14 +26,19 @@ const Position = ({ data, pageContext }) => {
           />
         )}
         content={(
-          <div className="pa4 br3 paper-1 mh2 w-auto w-90-l">
-            <h2>{position.frontmatter.title}</h2>
-            <h4 className="black-60 mb1">{position.frontmatter.company}</h4>
-            <h4 className="black-30 mb4">{position.frontmatter.dates}</h4>
-            <div dangerouslySetInnerHTML={{ __html: position.html }}></div>
-          </div>
+          <>
+            <PositionHeader
+              title={position.frontmatter.title}
+              company={position.frontmatter.company}
+              dates={position.frontmatter.dates}
+            />
+            <div className="pa4 br3 mh2 w-auto w-90-l">
+              <h1>Table of contents</h1>
+              <div className="table-of-contents" dangerouslySetInnerHTML={{__html: position.tableOfContents}}></div>
+              {renderAst(position.htmlAst)}
+            </div>
+          </>
         )}
-        selectedItem={position}
       />
     </Layout>
   );
@@ -33,14 +46,14 @@ const Position = ({ data, pageContext }) => {
 
 Position.propTypes = {
   data: PropTypes.object,
-  selectedItem: PropTypes.object,
   onSelectItem: PropTypes.func,
 };
 
 export const query = graphql`
   query($pathId: String!) {
     markdownRemark(frontmatter: { path: { eq: $pathId } }) {
-      html,
+      htmlAst,
+      tableOfContents(pathToSlugField: "frontmatter.path")
       frontmatter {
         title
         company
@@ -48,6 +61,7 @@ export const query = graphql`
         description
         type
         shortDescription
+        path
       }
     }
   }
