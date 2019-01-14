@@ -55,6 +55,19 @@ module.exports = {
         ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
-    `gatsby-transformer-remark`
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              offsetY: `48`,
+              icon: false,
+            },
+          },
+        ],
+      },
+    },
   ],
 }
