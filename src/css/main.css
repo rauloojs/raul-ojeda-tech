@@ -82,10 +82,12 @@ a {
 }
 
 .challenges {
-  background: linear-gradient(to right, #24c6dc, #514a9d);
+  background: linear-gradient(to right, #3a7bd5, 60%, #00d2ff);
   color: white;
-  padding: 1rem;
+  padding: 1rem 2rem;
   margin-bottom: 1.5rem;
+  border-radius: .5rem;
+  margin: 0 0 1.5rem 0;
 }
 
 @media screen and (min-width: 960px) {
