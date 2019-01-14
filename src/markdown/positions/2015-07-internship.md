@@ -22,13 +22,14 @@
   "path": "positions/t-systems-internship"
 }
 ---
+#Role
+Second level support for internal and external customers. Assigned to give maintenance and monitor UNIX based servers.
 
-<h3>Activities</h3>
-<p>Second level support for internal and external customers.</p>
-<p>Assigned to give maintenance and monitor UNIX based servers.</p>
+#Projects
 
-<h3>Projects</h3>
-<h4>Python tool for automated server validation</h4>
+##Python tool for automated server validation
 <p>The process of validation wasn't standarized and made by hand. Results were saved in an excel spreadsheet which could which tended to change. This process could take hours per server, and we are talking about a company whose clients required hundreds of virtual servers to work</p>
-<p>Along with my teammate wrote a Python tool to automate validation of recently configured servers. First a small script written in bash was remotely ran on servers via SSH to get a text file with output data. Then a desktop app (ui powered by PyQt) took those files and maped them to a excel file using a specified template. Xlsx files were filled using the template as base and mapping values through named cells, this way the arrange of values, styling, etc. could be easily changed. The process improved in speed considerably: it took about 5 minutes</p>
+<p>Along with my teammate wrote a Python tool to automate validation of recently configured servers. First a small script written in bash was remotely ran on servers via SSH to get a text file with output data. Then a desktop app (ui powered by PyQt) took those files and maped them to a excel file using a specified template. Xlsx files were filled using the template as base and mapping values through named cells, this way the arrange of values, styling, etc. could be easily changed.</p>
 <p>I wrote a wiki for docs.</p>
+
+<div class="challenges">The process improved in speed considerably: it went from a couple of hours to about 5 minutes</div>
