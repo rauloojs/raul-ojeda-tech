@@ -22,13 +22,14 @@
   "path": "positions/buap-social-service"
 }
 ---
+#Role
+Social service provider
 
-<h3>Projects</h3>
+#Projects
 
-<h4>Design of new platform</h4>
-<p>
-  Software engineering for a new Social Service web based platform, focused on user experience and engagement through gamification.
-</p>
+##Design of new platform Social Service Platform
+
+Software engineering for a new Social Service web based platform, focused on user experience and engagement through gamification.
 
 - Mockups designed with Balsamiq
 - Diagrams created with YAML
