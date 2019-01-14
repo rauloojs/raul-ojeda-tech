@@ -7,8 +7,8 @@ const PositionListItem = ({ position }) => {
   return (
     <Link
       to={position.frontmatter.path}
-      getProps={({ isCurrent }) => ({
-        className: `black db pv2 pl2 mb1 pointer bb b--black-10 ${isCurrent ? '' : 'glow o-40'}`,
+      getProps={({ isPartiallyCurrent }) => ({
+        className: `black db pv2 pl2 mb1 pointer bb b--black-10 ${isPartiallyCurrent ? '' : 'glow o-40'}`,
       })}
     >
       <div>{position.frontmatter.title}</div>
