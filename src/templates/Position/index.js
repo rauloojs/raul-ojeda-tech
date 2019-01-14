@@ -31,6 +31,7 @@ const Position = ({ data, pageContext }) => {
               title={position.frontmatter.title}
               company={position.frontmatter.company}
               dates={position.frontmatter.dates}
+              gradient={position.frontmatter.gradient}
             />
             <div className="pa4 br3 mh2 w-auto w-90-l">
               <h1>Table of contents</h1>
@@ -61,6 +62,7 @@ export const query = graphql`
         description
         type
         shortDescription
+        gradient
         path
       }
     }

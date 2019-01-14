@@ -19,6 +19,7 @@
     }
   ],
   "type": "position",
+  "gradient": "linear-gradient(to right, #1488cc, #2b32b2)",
   "path": "positions/buap-social-service"
 }
 ---

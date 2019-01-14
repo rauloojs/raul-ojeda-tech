@@ -24,6 +24,7 @@
     }
   ],
   "type": "position",
+  "gradient": "linear-gradient(to right,#16759e,#79eadd)",
   "path": "positions/procodific-full-stack-web-developer"
 }
 ---

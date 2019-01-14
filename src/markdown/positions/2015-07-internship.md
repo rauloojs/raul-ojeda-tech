@@ -19,6 +19,7 @@
     }
   ],
   "type": "position",
+  "gradient": "linear-gradient(to right, #cc2b5e, #753a88)",
   "path": "positions/t-systems-internship"
 }
 ---

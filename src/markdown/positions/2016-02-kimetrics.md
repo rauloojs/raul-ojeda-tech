@@ -19,6 +19,7 @@
     }
   ],
   "type": "position",
+  "gradient": "linear-gradient(to right, #fc4a1a, #f7b733)",
   "path": "positions/kimetrics-full-stack-web-developer"
 }
 ---
