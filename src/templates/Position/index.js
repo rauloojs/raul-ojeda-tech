@@ -30,10 +30,11 @@ const Position = ({ data, pageContext }) => {
             <PositionHeader
               title={position.frontmatter.title}
               company={position.frontmatter.company}
+              companySite={position.frontmatter.companySite}
               dates={position.frontmatter.dates}
               gradient={position.frontmatter.gradient}
             />
-            <div className="pa4 br3 mh2 w-auto w-90-l">
+            <div className="pa3 pa4-l br3 mh2 w-auto w-90-l">
               <h1>Table of contents</h1>
               <div className="table-of-contents" dangerouslySetInnerHTML={{__html: position.tableOfContents}}></div>
               {renderAst(position.htmlAst)}
@@ -58,6 +59,7 @@ export const query = graphql`
       frontmatter {
         title
         company
+        companySite
         dates
         description
         type

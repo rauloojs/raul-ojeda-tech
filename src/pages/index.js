@@ -26,6 +26,7 @@ export const query = graphql`
           frontmatter {
             title,
             company,
+            companySite,
             dates,
             description,
             tags {
