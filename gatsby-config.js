@@ -62,7 +62,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
-              offsetY: `48`,
+              offsetY: `70`,
               icon: false,
             },
           },
@@ -73,7 +73,6 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true, // Print removed selectors and processed file names
-        develop: true,
         ignore: [
           `src/css/main.css`
         ],
