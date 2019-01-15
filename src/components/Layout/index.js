@@ -35,7 +35,7 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.indexTitle} />
         <Profiles className="flex-l flex-column justify-center dn fixed z-1 right-center paper-1-hover br2 br--left overflow-hidden" />
         <div
-          className="pb4 pt5 pt-header-l"
+          className="pb4 pt6 layout-content"
         >
           {children}
         </div>
