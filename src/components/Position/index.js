@@ -10,8 +10,10 @@ const Position = ({ position }) => {
       <Link to={position.frontmatter.path} className="black">
         <h2 className="mb3">{position.frontmatter.title}</h2>
       </Link>
-      <h4 className="black-60 mb1">{position.frontmatter.company}</h4>
-      <h4 className="black-30 mb1">{position.frontmatter.dates}</h4>
+      <a href={position.frontmatter.companySite}>
+        <h4 className="black-60 mb1">{position.frontmatter.company}</h4>
+      </a>
+      <h4 className="black-30 mb3">{position.frontmatter.dates}</h4>
       <p className="black-90">{position.frontmatter.description}</p>
       <div className="flex flex-row justify-between items-center">
         <Tags
