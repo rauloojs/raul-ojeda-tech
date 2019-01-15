@@ -70,7 +70,7 @@ class Header extends Component {
           className={`w-100 flex items-start items-center-l fixed ${small ? ' pt0-l flex-column flex-row-l justify-between-l ph3 shadow-bottom justify-center': 'pt4 pb2 flex-column justify-between'}`}
         >
           <SiteTitle small={small} />
-          <MenuIconWrapper className="dn-l">
+          <MenuIconWrapper className="d-flex dn-l">
             <FaBars
               onClick={this.handleNavbarToggle}
             />

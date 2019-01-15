@@ -2,9 +2,8 @@ import styled from 'styled-components';
 
 const MenuIconWrapper = styled.div`
   position: absolute;
-  top: 12px;
+  top: 10px;
   right: 12px;
-  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
