@@ -5,7 +5,9 @@ import PositionListItem from '../PositionListItem';
 
 const Positions = ({ positions, asList }) => {
   return (
-    <div className={`h-100 ${asList ? 'ml3 br3 paper-1 pv2' : 'flex flex-column items-center'}`}>
+    <div
+      className={`${asList ? 'ml3 br3 paper-1 positions-list' : 'flex flex-column items-center'}`}
+    >
       {positions.map(({ node }) => asList ? (
         <PositionListItem
           key={node.id}
