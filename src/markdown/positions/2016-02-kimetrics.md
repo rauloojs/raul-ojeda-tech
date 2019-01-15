@@ -2,6 +2,7 @@
 {
   "title": "Full Stack Web Developer",
   "company": "Kimetrics",
+  "companySite": "https://kimetrics.com/",
   "dates": "Feb 16 - Sep 17",
   "description": "CRM-like platform oriented to data analysis and field management. Staff on field uses a mobile app connected to a web platform feeding the data warehouse. Working as full-stack web developer, leader of frontend and backend projects.",
   "tags": [

@@ -2,6 +2,7 @@
 {
   "title": "Social Service Provider",
   "company": "Dirección General de Servicio Social, BUAP",
+  "companySite": "https://cmas.siu.buap.mx/portal_pprd/wb/Servicio_Social/servicio_social",
   "dates": "Jan 15 - Jun 15",
   "description": "Software engineering for a new Social Service web based platform, focused on user experience and engagement through gamification.",
   "tags": [

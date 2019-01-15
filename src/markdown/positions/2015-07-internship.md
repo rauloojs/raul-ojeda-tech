@@ -2,6 +2,7 @@
 {
   "title": "Internship",
   "company": "T-Systems",
+  "companySite": "https://www.t-systems.com/",
   "dates": "Jul 15 - Dec 15",
   "description": "2nd level support for internal and external customers. Assigned to give maintenance and monitor UNIX based servers. I was in communication with important customers in US. I also developed a desktop app remotely connected to servers to enhance and automate validation of recently configured servers.",
   "tags": [
