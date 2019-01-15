@@ -90,12 +90,21 @@ a {
   margin: 0 0 1.5rem 0;
 }
 
-.pt-header {
-  padding-top: 12rem;
+.layout-content {
+  padding-top: 11rem;
 }
 
-@media screen and (min-width: 960px) {
-  .pt-header-l {
-    padding-top: 12rem;
+.positions-list {
+  position: sticky;
+  top: 4.5rem;
+}
+
+.positions-list > a:not(:last-child) {
+  border-bottom: 1px solid #0000001c;
+}
+
+@media screen and (max-width: 960px) {
+  .layout-content {
+    padding-top: 4.5rem;
   }
 }
