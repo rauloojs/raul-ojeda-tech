@@ -7,6 +7,7 @@ import Navbar from '../Navbar';
 import SiteTitle from '../SiteTitle';
 import Backdrop from '../Backdrop';
 import Profiles from '../Profiles';
+import MenuIconWrapper from './MenuIconWrapper';
 
 let scrollListener, resizeListener = null;
 
@@ -69,11 +70,11 @@ class Header extends Component {
           className={`w-100 flex items-start items-center-l fixed ${small ? ' pt0-l flex-column flex-row-l justify-between-l ph3 shadow-bottom justify-center': 'pt4 pb2 flex-column justify-between'}`}
         >
           <SiteTitle small={small} />
-          <FaBars
-            className="absolute dn-l right-1 pointer op-90 glow"
-            style={{ top: 12 }}
-            onClick={this.handleNavbarToggle}
-          />
+          <MenuIconWrapper className="dn-l">
+            <FaBars
+              onClick={this.handleNavbarToggle}
+            />
+          </MenuIconWrapper>
           <Navbar hide={this.state.smallViewport && this.state.hideNavbar} />
           <Profiles className={`self-center dn-l ${this.state.smallViewport && this.state.hideNavbar ? 'dn' : 'flex'}`} />
         </HeaderWrapper>
