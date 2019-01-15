@@ -6,8 +6,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import Header from '../Header'
 import Profiles from '../Profiles';
 
-import 'tachyons/css/tachyons.min.css'
-import '../../css/main.css'
+import '../../css/tachyons.css';
+import '../../css/main.css';
 
 const Layout = ({ children }) => (
   <StaticQuery

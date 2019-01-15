@@ -77,7 +77,7 @@ module.exports = {
         ignore: [
           `src/css/main.css`
         ],
-        whitelistPatterns: [/^bg-/]
+        whitelistPatterns: [/^bg-/],
       }
     }
   ],
