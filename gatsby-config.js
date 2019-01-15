@@ -69,5 +69,16 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        develop: true,
+        ignore: [
+          `src/css/main.css`
+        ],
+        whitelistPatterns: [/^bg-/]
+      }
+    }
   ],
 }
