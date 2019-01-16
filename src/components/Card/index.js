@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CardWrapper from './CardWrapper';
 
-const Card = ({ title, icon, link }) => {
+const Card = ({ title, icon, link, download }) => {
   return (
     <CardWrapper
       href={link}
@@ -10,6 +10,7 @@ const Card = ({ title, icon, link }) => {
       target="_blank"
       className="flex justify-center items-center"
       title={title}
+      download={download}
     >
       {icon}
     </CardWrapper>
