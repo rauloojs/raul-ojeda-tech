@@ -16,7 +16,10 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title,
-            indexTitle
+            indexTitle,
+            description,
+            keywords,
+            themeColor
           }
         }
       }
@@ -26,8 +29,9 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: `Raúl Ojeda's personal site` },
-            { name: 'keywords', content: 'dev, javascript' },
+            { name: 'description', content: data.site.siteMetadata.description },
+            { name: 'keywords', content: data.site.siteMetadata.keywords },
+            { name: 'theme-color', content: data.site.siteMetadata.themeColor },
           ]}
         >
           <html lang="en" />
