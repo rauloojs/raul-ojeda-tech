@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Raúl Ojeda's personal site`,
-    indexTitle: 'Raúl Ojeda'
+    indexTitle: 'Raúl Ojeda',
+    description: `Raúl Ojeda's personal site. Look my dev profile, where I've worked and my personal projects. Contact/Hire me`,
+    keywords: 'dev, javascript, ruby on rails, react, angular, node, frontend, backend, web, developer, scrum master, full stack',
+    themeColor: '#318ada',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -21,19 +24,6 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
-        start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/images/favicon.png', // This path is relative to the root of the site.
-      },
-    },
-    'gatsby-plugin-offline',
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -84,5 +74,6 @@ module.exports = {
         icon: "src/images/favicon.png", // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-offline`,
   ],
 }
