@@ -10,7 +10,7 @@ const Position = ({ position }) => {
       <Link to={position.frontmatter.path} className="black">
         <h2 className="mb3">{position.frontmatter.title}</h2>
       </Link>
-      <a href={position.frontmatter.companySite}>
+      <a rel="noopener" href={position.frontmatter.companySite}>
         <h4 className="black-60 mb1">{position.frontmatter.company}</h4>
       </a>
       <h4 className="black-30 mb3">{position.frontmatter.dates}</h4>

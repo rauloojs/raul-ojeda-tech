@@ -11,7 +11,7 @@ const Courses = () => {
         year="2017"
         description={
           <>
-            <a href="https://www.scrumalliance.org/community/profile/rojeda">Scrum Alliance</a>
+            <a rel="noopener" href="https://www.scrumalliance.org/community/profile/rojeda">Scrum Alliance</a>
           </>
         }
       />
@@ -20,7 +20,7 @@ const Courses = () => {
         year="2016"
         description={
           <>
-            <a href="https://www.udemy.com/certificate/UC-HIG2L0KT/">Udemy</a>
+            <a rel="noopener" href="https://www.udemy.com/certificate/UC-HIG2L0KT/">Udemy</a>
           </>
         }
       />
@@ -38,7 +38,7 @@ const Courses = () => {
         year="2014"
         description={
           <>
-            Maryland University <a href="https://www.coursera.org/account/accomplishments/verify/C8KEK7FXHH">(Coursera)</a>
+            Maryland University <a rel="noopener" href="https://www.coursera.org/account/accomplishments/verify/C8KEK7FXHH">(Coursera)</a>
           </>
         }
       />
@@ -47,7 +47,7 @@ const Courses = () => {
         year="2014"
         description={
           <>
-            Vanderbilt University <a href="https://www.coursera.org/account/accomplishments/verify/PXD527VX7P">(Coursera)</a>
+            Vanderbilt University <a rel="noopener" href="https://www.coursera.org/account/accomplishments/verify/PXD527VX7P">(Coursera)</a>
           </>
         }
       />
@@ -56,7 +56,7 @@ const Courses = () => {
         year="2014"
         description={
           <>
-            Vanderbilt University <a href="https://www.coursera.org/account/accomplishments/verify/RCFQY4E58L">(Coursera)</a>
+            Vanderbilt University <a rel="noopener" href="https://www.coursera.org/account/accomplishments/verify/RCFQY4E58L">(Coursera)</a>
           </>
         }
       />

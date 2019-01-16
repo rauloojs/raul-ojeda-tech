@@ -8,7 +8,7 @@ const PositionHeader = ({ title, company, companySite, dates, gradient }) => {
       gradient={gradient}
     >
       <h1>{title}</h1>
-      <a href={companySite}><h3 className="white-90 mb1">{company}</h3></a>
+      <a rel="noopener" href={companySite}><h3 className="white-90 mb1">{company}</h3></a>
       <h4 className="white-60 mb0">{dates}</h4>
     </PositionHeaderWrapper>
   );

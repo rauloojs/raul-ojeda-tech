@@ -21,7 +21,7 @@ const AboutPage = ({ data }) => (
           icon={<FaHeart />}
           content={(
             <div>
-              <p>Built with <a href="https://www.gatsbyjs.org/">Gatsby</a> framework which provides modern technologies out of the box for static websites:</p>
+              <p>Built with <a rel="noopener" href="https://www.gatsbyjs.org/">Gatsby</a> framework which provides modern technologies out of the box for static websites:</p>
               <ul>
                 <li>React</li>
                 <li>Webpack</li>
@@ -35,13 +35,13 @@ const AboutPage = ({ data }) => (
         <AboutCard
           icon={<FaCode />}
           content={(
-            <div>Written with <a href="https://code.visualstudio.com/">VSCode</a></div>
+            <div>Written with <a rel="noopener" href="https://code.visualstudio.com/">VSCode</a></div>
           )}
         />
         <AboutCard
           icon={<FaPencilRuler />}
           content={(
-            <div><a href="https://github.com/storybooks/storybook">Storybook</a> as UI dev environment</div>
+            <div><a rel="noopener" href="https://github.com/storybooks/storybook">Storybook</a> as UI dev environment</div>
           )}
         />
         <AboutCard
@@ -50,9 +50,9 @@ const AboutPage = ({ data }) => (
             <div>
               <p>Styling:</p>
               <ul>
-                <li><a href="https://github.com/tachyons-css/tachyons/">Tachyons</a> (functional CSS)</li>
-                <li><a href="https://github.com/styled-components/styled-components">Styled components</a></li>
-                <li><a href="https://github.com/KyleAMathews/typography.js">Typography</a> (easy web fonts)</li>
+                <li><a rel="noopener" href="https://github.com/tachyons-css/tachyons/">Tachyons</a> (functional CSS)</li>
+                <li><a rel="noopener" href="https://github.com/styled-components/styled-components">Styled components</a></li>
+                <li><a rel="noopener" href="https://github.com/KyleAMathews/typography.js">Typography</a> (easy web fonts)</li>
               </ul>
             </div>
           )}
@@ -60,13 +60,13 @@ const AboutPage = ({ data }) => (
         <AboutCard
           icon={<FaServer />}
           content={(
-            <div>Hosting powered by <a href="https://www.netlify.com">Netlify</a></div>
+            <div>Hosting powered by <a rel="noopener" href="https://www.netlify.com">Netlify</a></div>
           )}
         />
         <AboutCard
           icon={<FaGithub />}
           content={(
-            <div>Source code available at <a href="https://github.com/rauloojs/raul-ojeda-tech">Github</a></div>
+            <div>Source code available at <a rel="noopener" href="https://github.com/rauloojs/raul-ojeda-tech">Github</a></div>
           )}
         />
       </Paper>
