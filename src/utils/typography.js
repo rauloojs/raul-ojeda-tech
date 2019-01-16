@@ -8,13 +8,13 @@ const typography = new Typography({
       styles: ['400'],
     },
     {
-      name: 'Noto Sans',
+      name: 'Muli',
       styles: ['400', '600', '700'],
     },
   ],
   headerWeight: '400',
   headerFontFamily: ['Lato', 'sans-serif'],
-  bodyFontFamily: ['Noto Sans', 'sans-serif'],
+  bodyFontFamily: ['Muli', 'sans-serif'],
   bodyWeight: 400,
   boldWeight: 700,
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
