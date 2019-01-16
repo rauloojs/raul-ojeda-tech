@@ -22,6 +22,7 @@ const Profiles = ({ className }) => {
       <Card
         icon={<FaFile />}
         link={cv}
+        download="Raúl Ojeda CV"
         title="Download my resume" />
     </div>
   );

@@ -125,5 +125,6 @@ I just developed a few features and perform some changes for this project, howev
 - Material UI (at first stage)
 - Styled components (at second stage to generate custom UI/UX)
 - Storybook
+- React-intl
 - Other libraries:
 date-fns, react-autosuggest, lodash, fuse.js
