@@ -4,7 +4,7 @@
   "company": "Procodific",
   "companySite": "https://procodific.com/",
   "dates": "Sep 17 - Now",
-  "description": "<strong>Remote</strong> position. Worked on <strong>three</strong> different projects: CountN, dmi and Tech for Reporters. Developments included <strong>Node</strong> and <strong>RoR</strong> stacks in backend and <strong>React</strong> stack in frontend.",
+  "description": "<strong>Remote</strong> position. Worked on <strong>three</strong> different projects: CountN, dmi and Tech for Reporters. Developments included <strong>Node</strong> and <strong>RoR</strong> stacks in backend and <strong>React</strong> stack in frontend",
   "shortDescription": "This is a short description",
   "tags": [
     {
@@ -50,8 +50,10 @@ The main goal was to create a **Restful API** to be consumed by mobile app.
 
 ###Backend
 - Hosted on AWS EC2
+- Nginx for server
+- Let’s Encrypt for HTTPS certificate
 - MongoDB + Mongoose for database.
-- Node + Express for api
+- Node + Express for API
 - Apidoc.js for API inline documentation
 - Socket.io for realtime
 - Ansible for provisioning and deployment
