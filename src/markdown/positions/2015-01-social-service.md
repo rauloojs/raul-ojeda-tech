@@ -4,7 +4,7 @@
   "company": "Dirección General de Servicio Social, BUAP",
   "companySite": "https://cmas.siu.buap.mx/portal_pprd/wb/Servicio_Social/servicio_social",
   "dates": "Jan 15 - Jun 15",
-  "description": "Software engineering for a new Social Service web based platform, focused on user experience and engagement through gamification.",
+  "description": "<strong>Software engineering</strong> for a new Social Service web based platform, <strong>focused</strong> on <strong>great user experience</strong> and <strong>engagement</strong> through <strong>gamification</strong>.",
   "tags": [
     {
       "label": "Design",
@@ -15,7 +15,7 @@
       "class": "bg-green white o-90"
     },
     {
-      "label": "Mock ups",
+      "label": "Software engineering",
       "class": "bg-light-purple white o-90"
     }
   ],
@@ -31,7 +31,7 @@ Social service provider
 
 ##Design of new platform Social Service Platform
 
-Software engineering for a new Social Service web based platform, focused on user experience and engagement through gamification.
+**Software engineering** for a new Social Service web based platform, **focused** on **great user experience** and **engagement** through **gamification**.
 
-- Mockups designed with Balsamiq
-- Diagrams created with YAML
+- UI Mockups designed with **Balsamiq**
+- Processes diagrams created with **YAML**
