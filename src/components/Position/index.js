@@ -14,7 +14,7 @@ const Position = ({ position }) => {
         <h4 className="black-60 mb1">{position.frontmatter.company}</h4>
       </a>
       <h4 className="black-30 mb3">{position.frontmatter.dates}</h4>
-      <p className="black-90">{position.frontmatter.description}</p>
+      <p className="black-90" dangerouslySetInnerHTML={{__html: position.frontmatter.description}}></p>
       <div className="flex flex-row justify-between items-center">
         <Tags
           className="mw4 mw-100-ns"
