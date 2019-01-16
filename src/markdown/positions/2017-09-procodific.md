@@ -4,7 +4,7 @@
   "company": "Procodific",
   "companySite": "https://procodific.com/",
   "dates": "Sep 17 - Now",
-  "description": "Working for data market client located in Denver, Colorado. Helping to upgrade RoR version to 5.1.3, and developing frontend from Invision mockups.",
+  "description": "<strong>Remote</strong> position. Worked on <strong>three</strong> different projects: CountN, dmi and Tech for Reporters. Developments included <strong>Node</strong> and <strong>RoR</strong> stacks in backend and <strong>React</strong> stack in frontend.",
   "shortDescription": "This is a short description",
   "tags": [
     {
@@ -30,18 +30,22 @@
 }
 ---
 #Role
-Full time developer (sometimes with flexible times, depending on workload). I worked remotely under SCRUM framework. Worked with other developers for some projects, and on my own for one of them. I used to review pull requests from other developers. We had daily/weekly meetings with the team and/or clients. We used JIRA for projects management, Slack for team communication and Git (Github and Bitbucket) for version control (following git flow branching model).
+As a **remote full time developer** I worked along with the dev team for some projects, and on my own for one of them, always under **SCRUM** framework. Other of my activities included: **review pull requests** from other developers and giving advice about the technologies I know. We had daily/weekly meetings with the team and/or clients. We used **JIRA** for projects management, **Slack** for team communication and **Git** (Github and Bitbucket) for version control (following **git flow** branching model).
 
 #Projects
 
 ##CountN
-Restful API for CountN mobile app (not released yet). CountN helps musicians to connect with live venues to schedule and perform gigs.
+
+CountN (not released yet) helps musicians to connect with live venues to schedule and perform gigs.
+
+The main goal was to create a **Restful API** to be consumed by mobile app.
+
 <ul class="challenges">
-  <li>App had Stripe as payment option.</li>
-  <li>App had a escrow system which required payments to be in hold until gig was performed.</li>
-  <li>App had a chat system linked to events system.</li>
-  <li>API needed custom search and filtering so I developed a mini framework for it. Used Mongo's aggregation framework and created a pagination module.</li>
-  <li>API needed to be fully documented so I used Apidoc to generate inline docs.</li>
+  <li>App had <strong>Stripe</strong> as payment option.</li>
+  <li>App had a <strong>escrow system</strong> which required payments to be in hold until a gig was performed.</li>
+  <li>App had a <strong>chat system</strong> linked to events system.</li>
+  <li>API needed <strong>custom search and filtering</strong> so I developed a mini framework for it. Used <strong>Mongo's aggregation framework</strong> and created a <strong>pagination module</strong>.</li>
+  <li>API needed to be fully documented for mobile dev so I <strong>used Apidoc to generate inline docs</strong>.</li>
 </ul>
 
 ###Backend
@@ -60,12 +64,15 @@ Restful API for CountN mobile app (not released yet). CountN helps musicians to 
 - Eslint + Lint Staged for code linting
 
 ##Data Markets Inc.
-Complete redesign for dmi platform. Implement given UI design using React and upgrade backend stack.
+
+[Data Markets Inc](https://dmi.io). develops an electronic commerce platform for data. It’s a hybrid between eBay and a commodities exchange for data.
+
+I was in charge of the <strong>complete redesign</strong> of dmi.io site by implementing given UI mockups (from <strong>Invision</strong>) using a <strong>React</strong> stack, and <strong>upgrading</strong> backend's <strong>RoR</strong> stack.
 <ul class="challenges">
-  <li>Frontend had to be SEO friendly. Server side rendering was mandatory.</li>
-  <li>Frontend should behave as a SPA. I decided to use React on rails library which provides SSR and helpers to keep React code separated from backend</li>
-  <li>New design came with new features for platform, so besides backend "upgrade", a few modules where refactored.</li>
-  <li>Created Restful API based on existing code to be consumed by frontend.</li>
+  <li>Frontend had to be <strong>SEO friendly</strong>. <strong>Server side rendering</strong> was mandatory.</li>
+  <li>Frontend should behave as a <strong>SPA</strong>. I decided to use <strong>React on Rails</strong> library which provides SSR and helpers to keep React code separated from backend.</li>
+  <li>New design came along with <strong>new features</strong> to the platform, so besides backend "upgrade", <strong>a few modules where also refactored</strong>.</li>
+  <li>A <strong>Restful API</strong> based on existing code was needed to be consumed by frontend.</li>
 </ul>
 
 ###Backend
@@ -75,23 +82,23 @@ Complete redesign for dmi platform. Implement given UI design using React and up
 - Webpacker + React on Rails to support SSR with frontend as a SPA
 - Devise + JWT for API authentication
 
-Backend project has a larger list of dependencies. I'm just mentioning the relevant ones for the parts of code I worked in.
+Backend project has a larger list of dependencies. I only mention the relevant ones for the parts of code I worked with.
 
 ###Frontend
+- Hosted on Heroku
+- Invision mockups
 - React
 - Rails/webpacker to generate react starter project
 - React on Rails to get props + context from backend
-- Bootstrap + Custom styles + SASS
+- Custom Bootstrap + SASS
 - Reactstrap instead of boostrap's jQuery parts
-- FontAwesome for icons
-- Date-fns for dates
-- Download.js for easy binary downloads/previews
-- Validate.js for easy forms validation
 - Other libraries:
-react-autosuggest, lodash, react-dropzone, react-infinite-scroller, react-number-format, react-slick, rxjs
+font awesome icons, date-fns, download.js, validate.js, react-autosuggest, lodash, react-dropzone, react-infinite-scroller, react-number-format, react-slick, rxjs
 
 ##Tech for reporters
-TechForReporters is a place where reporters can ask questions about the latest tech news and where technologists – programmers, engineers, designers, and thinkers – can answer in an anonymous or open forum. I just developed a few features and perform some changes for this project, however I upgraded frontend to React 16 and started site redesign from material UI to custom design (which hasn't been released yet).
+[TechForReporters](https://techforreporters.com/) is a place where reporters can ask questions about the latest tech news and where technologists – programmers, engineers, designers, and thinkers – can answer in an anonymous or open forum.
+
+I just developed a few features and perform some changes for this project, however I <strong>upgraded frontend to React 16</strong> and <strong>started site redesign</strong> from material UI to a custom one (which hasn't been released yet).
 
 ###Backend
 - Hosted on Digital Ocean
@@ -106,6 +113,8 @@ TechForReporters is a place where reporters can ask questions about the latest t
 - Eslint + Lint Staged for code linting
 
 ###Frontend
+- Hosted on Digital Ocean
+- Zeplin mockups
 - React
 - Babel
 - Webpack
@@ -114,7 +123,5 @@ TechForReporters is a place where reporters can ask questions about the latest t
 - Material UI (at first stage)
 - Styled components (at second stage to generate custom UI/UX)
 - Storybook
-- Date-fns
-- React-autosuggest
-- Lodash
-- Fuse.js
+- Other libraries:
+date-fns, react-autosuggest, lodash, fuse.js
