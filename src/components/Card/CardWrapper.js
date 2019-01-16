@@ -1,25 +1,21 @@
 import styled from 'styled-components';
 
 const CardWrapper = styled.a`
-  background-image: none;
+  background-color: white;
   width: auto;
-  min-width: 200px;
-  min-height: 200px;
-  font-size: 3em;
+  font-size: 2rem;
+  padding: 1rem;
   color: #676767;
   cursor: pointer;
-  background-position: center;
-  transition: background 0.8s;
+  transition: all 0.4s;
 
-  &:hover {
-    color: inherit;
-    background: #ebebeb radial-gradient(circle, transparent 1%, #ebebeb 1%) center/15000%;
-  }
-
-  &:active {
-    background-color: #fafafa;
-    background-size: 100%;
-    transition: background 0s;
+  @media only screen and (min-width: 960px) {
+    &:hover {
+      color: inherit;
+      background-color: #ebebeb;
+      padding: 1.5rem;
+      font-size: 2.5rem;
+    }
   }
 `;
 

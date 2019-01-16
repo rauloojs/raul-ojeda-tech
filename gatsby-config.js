@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Raúl Ojeda's personal site`,
-    indexTitle: 'Raúl Ojeda'
+    indexTitle: 'Raúl Ojeda',
+    description: `Raúl Ojeda's personal site. Look my dev profile, where I've worked and my personal projects. Contact/Hire me`,
+    keywords: 'dev, javascript, ruby on rails, react, angular, node, frontend, backend, web, developer, scrum master, full stack',
+    themeColor: '#318ada',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -12,21 +15,15 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
-        start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/images/favicon.png', // This path is relative to the root of the site.
+        name: `markdown`,
+        path: `${__dirname}/src/markdown/`,
       },
     },
-    'gatsby-plugin-offline',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -39,14 +36,45 @@ module.exports = {
         // Add any options here
       },
     },
-    'gatsby-transformer-json',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        name: `data`,
-        path: `${__dirname}/src/data/`,
-        ignore: [`**/\.*`], // ignore files starting with a dot
+        plugins: [
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              offsetY: `70`,
+              icon: false,
+            },
+          },
+        ],
       },
     },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        ignore: [
+          `src/css/main.css`
+        ],
+        whitelistPatterns: [/^bg-/],
+      }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Raúl Ojeda's personal site",
+        short_name: "Raul Ojeda",
+        start_url: "/",
+        background_color: "#318ada",
+        theme_color: "#318ada",
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: "standalone",
+        icon: "src/images/favicon.png", // This path is relative to the root of the site.
+      },
+    },
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify`,
   ],
 }
