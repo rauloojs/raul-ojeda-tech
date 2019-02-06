@@ -35,7 +35,7 @@ Some of the **challenges** I faced when developing the following projects includ
 
 ##Kimetrics Backend
 
-**Restful API** designed to be **consumed by mobile application** (Android) and **feed a datawarehouse**. This project went through **2 major updates**: v2 and v3. I started working on **v2 features and maintainance**, and later I participated **designing and implementing v3**.
+**Restful API** designed to be **consumed by mobile application** (Android) and **feed a data warehouse**. This project went through **2 major updates**: v2 and v3. I started working on **v2 features and maintenance**, and later I participated **designing and implementing v3**.
 
 - Hosted on AWS EC2
 - Nginx for server
@@ -53,7 +53,7 @@ django-tenants, django-filters, openpyxl, requests
 **Single Page Application** for **administration** and **monitoring** of **mobile** users activity. Frontend views included: **CRUDs** for most of backend models, users activity **visualized in map** and **event-based schedules** in calendar.
 
 <ul class="challenges">
-  <li>Due to <strong>users activity</strong> it was required to render a <strong>huge amount of elements</strong>. This casued a lot of <strong>performance issues</strong> due to <strong>Angular's design</strong>. I <strong>developed custom directives</strong> to <strong>remove useless watchers</strong> in <strong>maps</strong> and <strong>calendar</strong> views. This <strong>improved site speed substantially</strong>.</li>
+  <li>Due to <strong>users activity</strong> it was required to render a <strong>huge amount of elements</strong>. This caused a lot of <strong>performance issues</strong> due to <strong>Angular's design</strong>. I <strong>developed custom directives</strong> to <strong>remove useless watchers</strong> in <strong>maps</strong> and <strong>calendar</strong> views. This <strong>improved site speed substantially</strong>.</li>
   <li><strong>Settings and permissions</strong> were in <strong>constant change</strong> so I <strong>developed "recursive" directives</strong> to render views based only on those objects structures</li>
   <li>The <strong>survey builder component</strong> (based on angular-surveys) <strong>could be a separated project</strong> due to its <strong>complexity</strong>, which included <strong>nested CRUDS</strong>, a lot of <strong>drag and drop interaction</strong>, <strong>strong forms validation</strong> among other features.</li>
 </ul>
@@ -79,10 +79,10 @@ ui-router, moment, google-maps, full-calendar, angular-permissions, dragula
 <ul class="challenges">
   <li>This tool required <strong>excellent user experience</strong> due to survey's complex design.</li>
   <li>New surveys model <strong>supports versions management</strong>, so the UI.</li>
-  <li>It was hard to find an adecuate library for the flow-chart-like part. <strong>JSPlumb proved to be the right answer</strong> by providing a <strong>graph-like approach</strong> with great performance (it's SVG based).</li>
-  <li>I faced <strong>some issues</strong> due to <strong>JsPlumb DOM management</strong> and had to carefully <strong>connect event listeners</strong> with <strong>React components's lifecycle</strong>.</li>
-  <li>Surveys's design included a <strong>custom query language</strong> (based on <strong>react-query-builder</strong>) to be strong <strong>directly over backend's ORM</strong>.</li>
-  <li>Implented a <strong>first time walkthrough</strong> using <strong>react-joyride</strong></li>
+  <li>It was hard to find an adequate library for the flow-chart-like part. <strong>JSPlumb proved to be the right answer</strong> by providing a <strong>graph-like approach</strong> with great performance (it's SVG based).</li>
+  <li>I faced <strong>some issues</strong> due to <strong>JsPlumb DOM management</strong> and had to carefully <strong>connect event listeners</strong> with <strong>React components lifecycle</strong>.</li>
+  <li>Surveys design included a <strong>custom query language</strong> (based on <strong>react-query-builder</strong>) to be strong <strong>directly over backend's ORM</strong>.</li>
+  <li>Implemented a <strong>first time walkthrough</strong> using <strong>react-joyride</strong></li>
 </ul>
 
 - Hosted on AWS S3
@@ -97,7 +97,7 @@ react-router, eslint, axios, validate.js, lodash, moment, react-query-builder, r
 
 ##Photos Report
 
-Frontend tool to **generate** a **report** using **photographies** taken by mobile application users. Backend **categorizes** photos using **elastic search** so I used the **Searchkit** project which provides a great number of **powerful components** to consume **elastic APIs**.
+Frontend tool to **generate** a **report** using **photographs** taken by mobile application users. Backend **categorizes** photos using **elasticsearch** so I used the **Searchkit** project which provides a great number of **powerful components** to consume **elastic APIs**.
 
 <div class="challenges">
   <li>The report was <strong>easily</strong> created using <strong>specified photos</strong>. But <strong>non-inclusive filters</strong> were required, so I had to <strong>carefully</strong> manage <strong>elastic query exposed by Searchkit</strong> and <strong>pass it to backend</strong> with the desired changes.</li>
@@ -114,7 +114,7 @@ axios, date-fns, react-loaders, react-responsive-carousel
 
 ## Issues Report
 
-**Frontend** tool to **administrate issues** created by platform users (mobile and web). This project is **based on react-admin** and is meant to be the **starter project of kimetrics frontend's next version**.
+**Frontend** tool to **administrate issues** created by platform users (mobile and web). This project is **based on react-admin** and is meant to be the **starter project of kimetrics frontend next version**.
 
 <ul class="challenges">
   <li>Although react-admin provides a component for <strong>date filtering</strong>, <strong>a range filter</strong> was needed so I created a <strong>custom filter component based on react-date-range</strong>.</li>

@@ -51,4 +51,4 @@ Along with my teammate, we wrote a **Python tool** to **automate** validation of
 
 I wrote **documentation** for this app in **department's internal wiki**.
 
-<ul class="challenges">The process <strong>improved</strong> in <strong>speed substantialy</strong>: it went from a couple of <strong>hours</strong> to just <strong>minutes</strong></ul>
+<ul class="challenges">The process <strong>improved</strong> in <strong>speed substantially</strong>: it went from a couple of <strong>hours</strong> to just <strong>minutes</strong></ul>
