@@ -60,7 +60,7 @@ The main goal was to create a **Restful API** to be consumed by mobile app.
 - Passport + JWT for authentication
 - Stripe for payments
 - Mailgun for email delivery
-- Multer for bynaries
+- Multer for binaries
 - Nunjucks for templates
 - Babel + Gulp for ES6/modules transpiling
 - Eslint + Lint Staged for code linting
@@ -103,7 +103,7 @@ font awesome icons, date-fns, download.js, validate.js, react-autosuggest, lodas
 I just developed a few features and perform some changes for this project, however I <strong>upgraded frontend to React 16</strong> and <strong>started site redesign</strong> from material UI to a custom one (which hasn't been released yet).
 
 ###Backend
-- Hosted on Digital Ocean
+- Hosted on DigitalOcean
 - Node + Express for API
 - MongoDB + Mongoose for database.
 - Apidoc.js for API inline documentation
@@ -115,7 +115,7 @@ I just developed a few features and perform some changes for this project, howev
 - Eslint + Lint Staged for code linting
 
 ###Frontend
-- Hosted on Digital Ocean
+- Hosted on DigitalOcean
 - Zeplin mockups
 - React
 - Babel
