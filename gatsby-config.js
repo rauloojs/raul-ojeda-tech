@@ -5,6 +5,7 @@ module.exports = {
     description: `Raúl Ojeda's personal site. Look my dev profile, where I've worked and my personal projects. Contact/Hire me`,
     keywords: 'dev, javascript, ruby on rails, react, angular, node, frontend, backend, web, developer, scrum master, full stack',
     themeColor: '#318ada',
+    googleSiteVerification: 'PuY3ZnY4Vku9MMNsPsPIZDoCjwBGrLs-lFbZyVlv5eM'
   },
   plugins: [
     'gatsby-plugin-react-helmet',

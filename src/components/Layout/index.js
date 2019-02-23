@@ -19,7 +19,8 @@ const Layout = ({ children }) => (
             indexTitle,
             description,
             keywords,
-            themeColor
+            themeColor,
+            googleSiteVerification
           }
         }
       }
@@ -32,6 +33,7 @@ const Layout = ({ children }) => (
             { name: 'description', content: data.site.siteMetadata.description },
             { name: 'keywords', content: data.site.siteMetadata.keywords },
             { name: 'theme-color', content: data.site.siteMetadata.themeColor },
+            { name: 'google-site-verification', content: data.site.siteMetadata.googleSiteVerification }
           ]}
         >
           <html lang="en" />
