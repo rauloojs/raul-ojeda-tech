@@ -12,7 +12,7 @@ const AboutPage = ({ data }) => (
       <Paper>
         <h2>About me</h2>
         <p>I’m a <strong>software engineer</strong> located in <strong>Puebla, México</strong>. I am an IT passionate who has worked for companies committed to <strong>innovation and processes quality</strong>.</p>
-        <p>Either giving <strong>support</strong> to internal customers, performing as <strong>dev-ops</strong> or <strong>developing high quality software</strong>, I define myself as a <strong>problem solver</strong> who is always looking for the most <strong>creative</strong> and <strong>efficient</strong> solutions.</p>
+        <p>Either <strong>developing high quality software</strong>, giving <strong>support</strong> to internal customers, or even performing as <strong>dev-ops</strong>, I define myself as a <strong>problem solver</strong> who is always looking for the most <strong>creative</strong> and <strong>efficient</strong> solutions.</p>
         <p><strong>Self taught</strong> learner, <strong>team worker</strong>, and a person who feels very comfortable in <strong>modern web development environments</strong>.</p>
       </Paper>
       <Paper>
@@ -66,7 +66,7 @@ const AboutPage = ({ data }) => (
         <AboutCard
           icon={<FaGithub />}
           content={(
-            <div>Source code available at <a rel="noopener" href="https://github.com/rauloojs/raul-ojeda-tech">Github</a></div>
+            <div>Source code available on <a rel="noopener" href="https://github.com/rauloojs/raul-ojeda-tech">Github</a></div>
           )}
         />
       </Paper>
