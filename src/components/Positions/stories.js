@@ -11,7 +11,6 @@ const positions = [
       "company": "Procodific",
       "dates": "Sep 17 - Now",
       "description": "Working for data market client located in Denver, Colorado. Helping to upgrade RoR version to 5.1.3, and developing frontend from Invision mockups.",
-      "shortDescription": "This is a short description",
       "tags": ["React", "Ruby on Rails", "Node", "React on rails"]
     }
   },
