@@ -90,6 +90,12 @@ a {
   margin: 0 0 1.5rem 0;
 }
 
+.challenges a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .layout-content {
   padding-top: 11rem;
 }
