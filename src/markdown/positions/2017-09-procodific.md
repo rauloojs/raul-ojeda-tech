@@ -3,9 +3,8 @@
   "title": "Full Stack Web Developer",
   "company": "Procodific",
   "companySite": "https://procodific.com/",
-  "dates": "Sep 17 - Now",
+  "dates": "Sep 17 - Mar 19",
   "description": "<strong>Remote</strong> position. Worked on <strong>three</strong> different projects: CountN, dmi and Tech for Reporters. Developments included <strong>Node</strong> and <strong>RoR</strong> stacks in backend and <strong>React</strong> stack in frontend",
-  "shortDescription": "This is a short description",
   "tags": [
     {
       "label": "React",

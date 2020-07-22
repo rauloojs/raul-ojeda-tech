@@ -63,7 +63,6 @@ export const query = graphql`
         dates
         description
         type
-        shortDescription
         gradient
         path
       }
