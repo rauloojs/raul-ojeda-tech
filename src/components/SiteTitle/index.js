@@ -15,7 +15,7 @@ const SiteTitle = ({ small }) => {
           Raúl <span className="brand-color">Ojeda</span>
         </h2>
         <h3 className={`f5 pl1 ma0 mt1 black-50 ${small && 'dn'}`}>
-          Full Stack Web Developer
+          Senior Full Stack Developer
         </h3>
       </div>
     </Link>

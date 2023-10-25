@@ -16,10 +16,6 @@ const Profiles = ({ className }) => {
         link="https://github.com/rauloojs"
         title="My GitHub profile" />
       <Card
-        icon={<FaClock />}
-        link="https://wakatime.com/@rauloojs"
-        title="My Wakatime profile" />
-      <Card
         icon={<FaFile />}
         link={cv}
         download="Raúl Ojeda CV"
