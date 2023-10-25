@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../Card';
-import { FaClock, FaLinkedinIn, FaGithub, FaFile } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub, FaFile } from 'react-icons/fa';
 
 import cv from '../../files/CV.pdf';
 
