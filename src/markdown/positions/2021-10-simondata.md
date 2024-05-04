@@ -1,9 +1,9 @@
 ---
 {
-  "title": "Senior Full Stack Developer",
+  "title": "Senior Software Engineer",
   "company": "Simon Data",
   "companySite": "https://www.simondata.com/",
-  "dates": "Oct 21 - Now",
+  "dates": "Oct 21 - Oct 23",
   "description": "<strong>Remote</strong> position. Working on a <strong>CDP-like platform</strong> as part of the orchestration team. Connected customer data to multiple <strong>marketing channels</strong>. Development stacks: Django, React.",
   "tags": [
     {
